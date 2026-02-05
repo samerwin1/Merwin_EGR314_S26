@@ -1,5 +1,5 @@
 ---
-title: Distance-Sensing Module's Requirements
+title: Subsystem Requirements
 ---
 
 ## Module Requirements
