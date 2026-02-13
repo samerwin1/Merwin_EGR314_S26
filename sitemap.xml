@@ -21,12 +21,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://samerwin1.github.io/EGR314/04-BOM/BOM/</loc>
+         <loc>https://samerwin1.github.io/EGR314/04-Microcontroller-Selection/Microcontroller-Selection/</loc>
          <lastmod>2026-02-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://samerwin1.github.io/EGR314/05-Schematic/schematic/</loc>
+         <loc>https://samerwin1.github.io/EGR314/05-Power-Budget/Power-Budget/</loc>
+         <lastmod>2026-02-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://samerwin1.github.io/EGR314/06-BOM/BOM/</loc>
+         <lastmod>2026-02-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://samerwin1.github.io/EGR314/07-Schematic/schematic/</loc>
          <lastmod>2026-02-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
