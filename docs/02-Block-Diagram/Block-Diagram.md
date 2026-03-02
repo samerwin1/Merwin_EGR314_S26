@@ -12,7 +12,7 @@ This page provides a block diagram representing the hardware components in the D
 ## Block Diagram 
 
 <center>
-![Block Diagram](314IndividualBlockDiagram2.drawio.png)
+![Block Diagram](314IndividualBlockDiagram3.drawio.png)
 </center>
 
-A PDF version of the block diagram is available [here](314IndividualBlockDiagram2.pdf), and the original drawio file [here](314IndividualBlockDiagram%20(1).drawio).
+A PDF version of the block diagram is available [here](314IndividualBlockDiagram3.drawio.pdf), and the original drawio file [here](314IndividualBlockDiagram%20(2).drawio).
