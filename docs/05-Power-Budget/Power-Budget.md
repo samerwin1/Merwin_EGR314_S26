@@ -6,29 +6,13 @@ tags:
 ---
 
 ## Overview
-Written context needs to added!
 
->Pick **ONLY** one of the two examples show below. **Remove** the other example. **REMOVE notations within the remaining section about being an example.**  
+This power budget shows the major power-drawing components of the subsystem and how sufficient power will be supplied to them.
 
-## Bill of Materials (Example as Table)
+[Power Budget](314-IndividualSubsystemPowerBudget.png)
 
-*Table ##: An example of one approach to adding your BOM table to this section.*
+The subsystem will be powered with a 9V 3A power supply feeding into two switching voltage regulators. The first regulator supplies 5V to the TF Luna LiDAR Sensor which has a maximum current of 150 mA. The second regulator supplies 3.3V to the PIC18F47Q43-I/PT microcontroller which has a maximum current of 350 mA. All other peripherals will be powered through the microcontroller and draw a negligible amount of current. This power budget shows that the chosen power supply will have more than enough current to supply both major components including safety margins for overdraws.
 
-| **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacture** | **Manufacturer #** | **Vendor Link** |**Datasheet Link** | **Schematic Reference Designators** |
-|:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
-8-bit SIPO/SISO Shift Register, SOIC-16 package | 1 | $0.49 | $ 0.49 | NXP | 74HC595D,112 | [DigiKey](https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC595D-112/763550) | [datasheet link](https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf) | U1 |
-0.1 µF Ceramic Capacitor, +/-10%, X7R, 50V, 0805 package |10 | 0.2750 | $2.75 | KEMET | C0805F104K5RACTU | PRLTA 109 |n/a | C2, C4, C6, C7, C8, C9, C10, C11, C12, C16
+## Resources
 
-Note: Setting it up as a table is nice because it is completely viewable without scaling issues. <ins>Downside</ins> is that you have to do the math.
-
-* You could also import your BOM via a screenshot of the spreadsheet created BOM
-
-## Bill of Materials (Example as Image)
-![](BOM-Screenshot.png){style width: "2000"}
-**Figure ##:** Example Bill of Materials as a screenshot.
-
-As you can see, the text can be difficult to read without opening the image.
-
-## Resouce
-
-The Bill of Material as a PDF download is available [*here*](PDF_For_BOM_EXAMPLE.pdf).
+The power budget is available as a pdf [here](314-IndividualSubsystemPowerBudget.pdf) and as an excel worksheet [here](314-IndividualSubsystemPowerBudget.xlsx).
