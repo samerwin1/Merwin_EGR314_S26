@@ -1,5 +1,5 @@
 ---
-title: Module Schematic
+title: Module Schematic & Printed Circuit Board
 ---
 
 ## Overview
@@ -10,7 +10,27 @@ This schematic below is designed to indicate the electrical connections/circuitr
 ![schematic](IndividualSubsystemSchematicV3.png){style width:"350" height:"300;"}
 
 
+## PCB
+
+The images below show the design of the PCB (Printed Circuit Board) based on the electrical schematic above. The design was sent out to be manufactured into a physical board.
+
+**Top Side**
+
+![PCB Top](314-IndividualSubsystemPCB_Front.png){style width:"350" height:"300;"}
+
+**Bottom Side**
+
+![PCB Bottom](314-IndividualSubsystemPCB_Back.png){style width:"350" height:"300;"}
+
+**Physical Board**
+
+This photo shows the physical board with all the components soldered onto it.
+
+![PCB Photo](PCBPhoto.jpg){style width:"350" height:"300;"}
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](EGR314-IndividualSubsystemDesign-SAM.pdf), and the Zip folder of the project [*here*](EGR314-IndividualSubsystemDesign-SAM.zip).
+The schematic as a PDF download is available [*here*](EGR314-IndividualSubsystemDesign-SAM.pdf), and the PCB design as a PDF download is available [*here*](314-IndividualSubsystemDesignPCB.pdf).
+
+The Zip folder of the project is availabe[*here*](EGR314-IndividualSubsystemDesign-SAM.zip).
+
