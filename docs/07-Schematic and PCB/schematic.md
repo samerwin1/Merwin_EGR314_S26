@@ -32,5 +32,5 @@ This photo shows the physical board with all the components soldered onto it.
 
 The schematic as a PDF download is available [*here*](EGR314-IndividualSubsystemDesign-SAM.pdf), and the PCB design as a PDF download is available [*here*](314-IndividualSubsystemDesignPCB.pdf).
 
-The Zip folder of the project is availabe[*here*](EGR314-IndividualSubsystemDesign-SAM.zip).
+The Zip folder of the project is availabe [*here*](EGR314-IndividualSubsystemDesign-SAM.zip).
 
