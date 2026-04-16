@@ -43,3 +43,18 @@ This message sends the current distance measurement from the LiDAR subsystem to 
 |**Example**       | A                 | J                 | 12                |
 
 This is a debugging broadcast message triggered by pushing the 'debug' button on any subsystems configured to do so. Not all systems are expected to be able to trigger rollcall, but all systems must respond to it. Lights up LEDs for a set interval on every subsystem that recieves it. (Received by my subsystem, acted upon, and either passed on or trashed)
+
+
+## Communication Code
+
+The code below shows the base-level software written to send messages out, and receive/translate/react to messages coming in.
+
+![MCC1](314MessageCompliance1.png)
+
+![MCC2](314MessageCompliance2.png)
+
+![MCC3](314MessageCompliance3.png)
+
+![MCC4](314MessageCompliance4.png)
+
+![MCC5](314MessageCompliance5.png)
