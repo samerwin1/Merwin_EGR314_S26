@@ -903,9 +903,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#send-speed-data" class="md-nav__link">
+  <a href="#send-acceleration-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Send Speed Data
+      Send Acceleration Data
     </span>
   </a>
   
@@ -1051,9 +1051,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#send-speed-data" class="md-nav__link">
+  <a href="#send-acceleration-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Send Speed Data
+      Send Acceleration Data
     </span>
   </a>
   
@@ -1119,7 +1119,7 @@
 <h2 id="overview">Overview</h2>
 <p>The purpose of this page is to list and define all serial message types that will be received and/or sent out by my individual subsystem as part of the UART daisy chain. This ensures that I know what type of messages to expect and how to act on them. It also helps me identify incorrectly formatted/addressed messages and remove them from the communication chain.</p>
 <h2 id="message-types">Message Types</h2>
-<h3 id="send-speed-data">Send Speed Data</h3>
+<h3 id="send-acceleration-data">Send Acceleration Data</h3>
 <table>
 <thead>
 <tr>
@@ -1149,21 +1149,21 @@
 <td><strong>Min Value</strong></td>
 <td>H</td>
 <td>A</td>
-<td>5</td>
+<td>E</td>
 <td>0</td>
 </tr>
 <tr>
 <td><strong>Max Value</strong></td>
 <td>H</td>
 <td>A</td>
-<td>5</td>
+<td>E</td>
 <td>255</td>
 </tr>
 <tr>
 <td><strong>Example</strong></td>
 <td>H</td>
 <td>A</td>
-<td>5</td>
+<td>E</td>
 <td>125</td>
 </tr>
 </tbody>
@@ -1178,6 +1178,8 @@
 <th><strong>Byte 2</strong></th>
 <th><strong>Byte 3</strong></th>
 <th><strong>Byte 4</strong></th>
+<th><strong>Byte 5</strong></th>
+<th><strong>Byte 6</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -1187,34 +1189,44 @@
 <td>receiver_id</td>
 <td>message_type</td>
 <td>message_data</td>
+<td>message_data</td>
+<td>message_data</td>
 </tr>
 <tr>
 <td><strong>Variable Type</strong></td>
 <td>char</td>
 <td>char</td>
-<td>uint8_t</td>
-<td>uint8_t</td>
+<td>char</td>
+<td>char</td>
+<td>char</td>
+<td>char</td>
 </tr>
 <tr>
 <td><strong>Min Value</strong></td>
 <td>J</td>
 <td>A</td>
-<td>6</td>
-<td>0</td>
+<td>F</td>
+<td>'0'</td>
+<td>'0'</td>
+<td>'0'</td>
 </tr>
 <tr>
 <td><strong>Max Value</strong></td>
 <td>J</td>
 <td>A</td>
-<td>6</td>
-<td>255</td>
+<td>F</td>
+<td>'9'</td>
+<td>'9'</td>
+<td>'9'</td>
 </tr>
 <tr>
 <td><strong>Example</strong></td>
 <td>J</td>
 <td>A</td>
-<td>6</td>
-<td>185</td>
+<td>F</td>
+<td>'1'</td>
+<td>'8'</td>
+<td>'5'</td>
 </tr>
 </tbody>
 </table>
@@ -1246,19 +1258,19 @@
 <td><strong>Min Value</strong></td>
 <td>A</td>
 <td>A</td>
-<td>12</td>
+<td>J</td>
 </tr>
 <tr>
 <td><strong>Max Value</strong></td>
 <td>J</td>
 <td>J</td>
-<td>12</td>
+<td>J</td>
 </tr>
 <tr>
 <td><strong>Example</strong></td>
 <td>A</td>
 <td>J</td>
-<td>12</td>
+<td>J</td>
 </tr>
 </tbody>
 </table>
