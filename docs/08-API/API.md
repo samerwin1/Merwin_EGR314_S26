@@ -13,7 +13,7 @@ The purpose of this page is to list and define all serial message types that wil
 |                  |**Byte 1**         |**Byte 2**         |**Byte 3**         |**Byte 4**         |
 |------------------|-------------------|-------------------|-------------------|-------------------|
 |**Variable Name** | sender_id         | receiver_id       | message_type      | message_data      |
-|**Variable Type** | char              | char              | uint8_t           | uint8_t           |
+|**Variable Type** | char              | char              | char              | uint8_t           |
 |**Min Value**     | H                 | A                 | E                 | 0                 |
 |**Max Value**     | H                 | A                 | E                 | 255               |
 |**Example**       | H                 | A                 | E                 | 125               |
@@ -37,7 +37,7 @@ This message sends the current distance measurement from the LiDAR subsystem to 
 |                  |**Byte 1**         |**Byte 2**         |**Byte 3**         |
 |------------------|-------------------|-------------------|-------------------|
 |**Variable Name** | sender_id         | receiver_id       | message_type      |
-|**Variable Type** | char              | char              | uint8_t           |
+|**Variable Type** | char              | char              | char              |
 |**Min Value**     | A                 | A                 | J                 |
 |**Max Value**     | J                 | J                 | J                 |
 |**Example**       | A                 | J                 | J                 |
