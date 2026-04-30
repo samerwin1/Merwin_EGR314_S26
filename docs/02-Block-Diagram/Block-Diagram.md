@@ -15,4 +15,15 @@ This page provides a block diagram representing the hardware components in the D
 ![Block Diagram](314IndividualBlockDiagram4.drawio.png)
 </center>
 
+## Relation to Product Requirements
+
+1. **Surface mounted, 3.3V switching power regulator:** Fulfilled by EVVO LM2596-3.3V Switching Voltage Regulator
+2. **Surface mounted microcontroller:** Fulfilled by Microchip PIC18F47Q43-I/PT microcontroller
+3. **Serial sensor:** Fulfilled by Benewake TF-Luna I2C LiDAR Single-Point Distance Sensor
+4. **Able to determine distance from device to object in its path:** Fulfilled by TF-Luna sensor's range of up to 8 meters
+5. **Wired communication:** Fulfilled by UART through upstream and downstream ribbon cable connectors
+6. **Sufficient refresh rate:** Fulfilled by TF-Luna sensor's frame rate of up to 100Hz
+
+## Resources
+
 A PDF version of the block diagram is available [here](314IndividualBlockDiagram4.drawio.pdf), and the original drawio file [here](314IndividualBlockDiagram%20(3).drawio).
