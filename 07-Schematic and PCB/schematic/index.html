@@ -847,11 +847,53 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pcb" class="md-nav__link">
+  <a href="#schematic" class="md-nav__link">
     <span class="md-ellipsis">
-      PCB
+      Schematic
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcbprinted-circuit-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB(Printed Circuit Board)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PCB(Printed Circuit Board)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ecad-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      ECAD Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unpopulated-physical-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unpopulated Physical Board
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#populated-physical-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      Populated Physical Board
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1008,11 +1050,53 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pcb" class="md-nav__link">
+  <a href="#schematic" class="md-nav__link">
     <span class="md-ellipsis">
-      PCB
+      Schematic
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcbprinted-circuit-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB(Printed Circuit Board)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PCB(Printed Circuit Board)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ecad-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      ECAD Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unpopulated-physical-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unpopulated Physical Board
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#populated-physical-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      Populated Physical Board
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1051,20 +1135,32 @@
   <h1>Module Schematic &amp; Printed Circuit Board</h1>
 
 <h2 id="overview">Overview</h2>
-<p>This schematic below is designed to indicate the electrical connections/circuitry of the LiDAR subsystem. The "Power Supply/Voltage Regulators" section shows that power can be taken from the team bus connection or a wall supply via barrel jack, and it is sent through two different switching voltage regulators: one to provide 5V and one to provide 3.3V. This satisfies Requirement 1(Surface mounted, 3.3V swithcing power regulator). The "Team Ribbon Cable Connectors" section highlights the connections to team subsystems in and out for UART communication and shared power. This satisfies Requirement 5(Wired communication). The "MPLAB Snap Programming/Debugging Tool" section shows the tool which will be used to upload code to the microcontroller after soldering it to the PCB. The "TF-Luna Single Point LiDAR Sensor" section shows the chosen LiDAR sensor and its connections to the microcontroller, as well as the data addresses which will be used for I2C communication. This satisfies Requirement 3(Serial sensor), Requirement 4(Able to determine distance from device to object in its path), and Requirement 6(Sufficient refresh rate). Finally, the "PIC18F47Q43-I/PT Microcontroller" section displays the chosen microcontroller for the subsystem, which of its pins connect to power/peripherals, two external status LEDs, one pushbutton for debugging purposes, and multiple extra headers connected to unused pins in the event that additions must be made to the system. This satisfies Requirement 2(Surface mounted microcontroller). The subsystem as a whole will allow the user to effectively navigate the product's environment and collect data on its surroundings.</p>
+<p>This page shows the electrical schematic, circuit board design, and final physical printed circuit board for the subsystem.</p>
+<h2 id="schematic">Schematic</h2>
+<p>This schematic below is designed to indicate the electrical connections/circuitry of the LiDAR subsystem. The "Power Supply/Voltage Regulators" section shows that power can be taken from the team bus connection or a wall supply via barrel jack, and it is sent through two different switching voltage regulators: one to provide 5V and one to provide 3.3V. This satisfies <strong>Subsystem Requirement 1</strong>. The "Team Ribbon Cable Connectors" section highlights the connections to team subsystems in and out for UART communication and shared power. This satisfies <strong>Subsystem Requirement 5</strong>. The "MPLAB Snap Programming/Debugging Tool" section shows the tool which will be used to upload code to the microcontroller after soldering it to the PCB. The "TF-Luna Single Point LiDAR Sensor" section shows the chosen LiDAR sensor and its connections to the microcontroller, as well as the data addresses which will be used for I2C communication. This satisfies <strong>Subsystem Requirements 3, 4, and 6</strong>. Finally, the "PIC18F47Q43-I/PT Microcontroller" section displays the chosen microcontroller for the subsystem, which of its pins connect to power/peripherals, two external status LEDs, one pushbutton for debugging purposes, and multiple extra headers connected to unused pins in the event that additions must be made to the system. This satisfies <strong>Subsystem Requirement 2</strong>. The subsystem as a whole will allow the user to effectively navigate the product's environment and collect data on its surroundings.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../IndividualSubsystemSchematicV3.png" data-desc-position="bottom"><img alt="schematic" height:_300_="height:&quot;300;&quot;" src="../IndividualSubsystemSchematicV3.png" style="style" width:_350_="width:&quot;350&quot;"></a></p>
-<h2 id="pcb">PCB</h2>
-<p>The images below show the design of the PCB (Printed Circuit Board) based on the electrical schematic above. The design was sent out to be manufactured into a physical board.</p>
+<h2 id="pcbprinted-circuit-board">PCB(Printed Circuit Board)</h2>
+<h3 id="ecad-design">ECAD Design</h3>
+<p>The images below show the design of the PCB based on the electrical schematic above. The design was sent out to be manufactured into a physical board.</p>
 <p><strong>Top Side</strong></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../314-IndividualSubsystemPCB_Front.png" data-desc-position="bottom"><img alt="PCB Top" height:_300_="height:&quot;300;&quot;" src="../314-IndividualSubsystemPCB_Front.png" style="style" width:_350_="width:&quot;350&quot;"></a></p>
 <p><strong>Bottom Side</strong></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../314-IndividualSubsystemPCB_Back.png" data-desc-position="bottom"><img alt="PCB Bottom" height:_300_="height:&quot;300;&quot;" src="../314-IndividualSubsystemPCB_Back.png" style="style" width:_350_="width:&quot;350&quot;"></a></p>
-<p><strong>Physical Board</strong></p>
-<p>This photo shows the physical board with all the components soldered onto it.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PCBPhoto.jpg" data-desc-position="bottom"><img alt="PCB Photo" height:_300_="height:&quot;300;&quot;" src="../PCBPhoto.jpg" style="style" width:_350_="width:&quot;350&quot;"></a></p>
+<h3 id="unpopulated-physical-board">Unpopulated Physical Board</h3>
+<p>These images show the physical circuit board before being populated with components.</p>
+<p><strong>Top Side</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PCBFrontUnpopulated.png" data-desc-position="bottom"><img alt="PCB Top Unpop." height:_300_="height:&quot;300;&quot;" src="../PCBFrontUnpopulated.png" style="style" width:_350_="width:&quot;350&quot;"></a></p>
+<p><strong>Bottom Side</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PCBBackUnpopulated.png" data-desc-position="bottom"><img alt="PCB Bottom Unpop." height:_300_="height:&quot;300;&quot;" src="../PCBBackUnpopulated.png" style="style" width:_350_="width:&quot;350&quot;"></a></p>
+<h3 id="populated-physical-board">Populated Physical Board</h3>
+<p>These images show the physical board with all of the components soldered onto it.</p>
+<p><strong>Top Side</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PCBPhoto.jpg" data-desc-position="bottom"><img alt="PCB Top Pop." height:_300_="height:&quot;300;&quot;" src="../PCBPhoto.jpg" style="style" width:_350_="width:&quot;350&quot;"></a></p>
+<p><strong>Bottom Side</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PCBBackPopulated.png" data-desc-position="bottom"><img alt="PCB Bottom Pop." height:_300_="height:&quot;300;&quot;" src="../PCBBackPopulated.png" style="style" width:_350_="width:&quot;350&quot;"></a></p>
 <h2 id="resouces">Resouces</h2>
 <p>The schematic as a PDF download is available <a href="../EGR314-IndividualSubsystemDesign-SAM.pdf"><em>here</em></a>, and the PCB design as a PDF download is available <a href="../314-IndividualSubsystemDesignPCB.pdf"><em>here</em></a>.</p>
-<p>The Zip folder of the project is availabe <a href="../EGR314-IndividualSubsystemDesign-SAM.zip"><em>here</em></a>.</p>
+<p>The Zip folder of the ECAD project is availabe <a href="../EGR314-IndividualSubsystemDesign-SAM.zip"><em>here</em></a>, and the PCB Gerber files <a href="../SethMerwin201.zip"><em>here</em></a>.</p>
 
 
 
