@@ -6,6 +6,11 @@ title: Component Selection
 
 The following sections are the selected major components necessary for providing power to the distance-sensing module and meeting the module's product requirements.
 
+| **Selection** | **Component Type** | **Summary** |
+| ------------- | ------------------ | ----------- |
+| ![](LM2596S-3.3(Regulator).png)<br> **LM2596-3.3 Switching Regulator**| Power Supply | This regulator will be used to convert the external unregulated DC power source into a switching 3.3V DC power supply. This will allow the microcontroller to be powered while improving efficiency. (A 5V regulator will also be needed to supply power to the LiDAR sensor. The above selection is also offered as a 5V output package. For the sake of simplicity and consistency, this will be used rather than making another comparison table.) **Fulfills Product Requirement 1** |
+| ![](TFLunaI2C(LiDAR).png)<br> **TFLuna I2C LiDAR Module** | Serial Sensor | This ToF single-point LiDAR sensor will provide the product with the capability to measure the distance to objects in its path. **Fulfills Product Requirements 3, 4, and 6** |
+
 ### Power Management
 
 **LM2596-3.3 Switching Regulator:** This regulator will be used to convert the external unregulated DC power source into a switching 3.3V DC power supply. This will allow the microcontroller to be powered while improving efficiency.
