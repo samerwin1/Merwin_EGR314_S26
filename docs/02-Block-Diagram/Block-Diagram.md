@@ -15,7 +15,7 @@ This page provides a block diagram representing the hardware components in the D
 ![Block Diagram](314IndividualBlockDiagram4.drawio.png)
 </center>
 
-## Relation to Product Requirements
+## Relation to Subsystem Requirements
 
 1. **Surface mounted, 3.3V switching power regulator:** Fulfilled by EVVO LM2596-3.3V Switching Voltage Regulator
 2. **Surface mounted microcontroller:** Fulfilled by Microchip PIC18F47Q43-I/PT microcontroller
