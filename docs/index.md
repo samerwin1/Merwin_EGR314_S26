@@ -5,13 +5,19 @@ tags:
 - tag2
 ---
 <center>
-<font size= "6"> Seth Merwin Datasheet </font><br>
+<font size= "6"> Seth Merwin's Datasheet </font><br>
 as part of<br>
 <font size= "8"> Project E-Fish-&-Sea </font><br>
 for<br>
 <font size= "5"> Team 201 </font><br>
 
-**Submission: March 7, 2026**
+Arizona State University
+
+**EGR 314**
+
+Kevin Nichols
+
+**Submission: May 4, 2026**
 </center>
 
 ## Introduction
@@ -25,13 +31,13 @@ The goal of the E-Fish-&-Sea project is to create an aquatic drone prototype whi
 * Subteam A: Wifi & Human Interface
 * Subteam B: Movement & Propulsion
 * Subteam C: Camera & Positioning Arm
-* Subteam D: Research & Development
+* Subteam D: Environmental Sensing
 
 Each subteam has two to three team members. Each member is in charge of their own individual subsystem inside that subteam. To learn about the project as a whole and/or view the datasheet for each other individual's subsystem, visit the [Team Website](https://egr314-s-2026-201.github.io/).
 
 ### My Contribution
 
-I am one member of Subteam D: Research and Development. This subteam is committed to providing sensing capabilities to the drone in order for the user to view and collect environmental data. My personal responsibility for this project is the design and creation of a subsystem which can measure the distance to whatever object is in the path of the drone. This data is then sent through a UART serial communication chain to the human interface for viewing by the user. To acheive this goal, my subsystem makes use of a serial single-point LiDAR sensor which is controlled and processed by an 8-bit microcontroller. This datasheet provides documentation for the entire design process of the subsystem from founding requirements to the finished product.
+I am one member of Subteam D: Environmental Sensing. This subteam is committed to providing sensing capabilities to the drone in order for the user to view and collect environmental data. My personal responsibility for this project is the design and creation of a subsystem which can measure the distance to whatever object is in the path of the drone. This data is then sent through a UART serial communication chain to the human interface for viewing by the user. To acheive this goal, my subsystem makes use of a serial single-point LiDAR sensor which is controlled and processed by an 8-bit microcontroller. This datasheet provides documentation for the entire design process of the subsystem from founding requirements to the finished product.
 
 ### Directory
 
