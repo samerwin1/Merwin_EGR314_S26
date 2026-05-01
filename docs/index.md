@@ -48,5 +48,8 @@ I am one member of Subteam D: Environmental Sensing. This subteam is committed t
 * To understand how power is supplied and disributed throughout the module, visit the ["Power Budget" page](https://samerwin1.github.io/Merwin_EGR314_S26/05-Power-Budget/Power-Budget/).
 * To view the list of materials used to build this subsystem, and details about each component, visit the ["BOM" page](https://samerwin1.github.io/Merwin_EGR314_S26/06-BOM/BOM/).
 * To see a detailed schematic of the electrical connections/circuitry for the subsystem, and see the design of the physical circuit board, visit the ["Schematic and PCB" page](https://samerwin1.github.io/Merwin_EGR314_S26/07-Schematic%20and%20PCB/schematic/).
-* To see the message types that this subsystem receives/sends out along the serial communication chain between subsystems, visit the ["API" page](https://samerwin1.github.io/Merwin_EGR314_S26/08-API/API/)
+* To see the message types that this subsystem receives/sends out along the serial communication chain between subsystems, visit the ["API" page](https://samerwin1.github.io/Merwin_EGR314_S26/08-API/API/).
+* To read about some changes that would be made in a 2nd version of this subsystem, visit the ["Hardware V2.0" page](https://samerwin1.github.io/Merwin_EGR314_S26/09-Hardware-V2.0/HardwareV2/).
+* To see the final version of the subsystem functioning and review/download the code used to program it, visit the ["Resources" page](https://samerwin1.github.io/Merwin_EGR314_S26/10-Resources/Resources/).
+* To read a discussion on the overall success of the subsystem and the key takeaways from being a part of this project, visit the ["Relfection" page](https://samerwin1.github.io/Merwin_EGR314_S26/11-Reflection/Reflection/).
 * For additional supporting information left out of the main pages of the datasheet, visit the ["Appendix" page](https://samerwin1.github.io/Merwin_EGR314_S26/Appendix/).
