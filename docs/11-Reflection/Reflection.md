@@ -28,6 +28,17 @@ As seen from the table the only requirement that was not met is the Multi-direct
 
 ## Top 10 Lessons Learned
 
+1. Due to the amount of different component types I had on the top and bottom of my board, I learned a lot of techniques for soldering surface mount components. I now feel much more confident in my soldering abilities.
+2. I learned a lot about I2C communication. While struggling to get my microcontroller to communicate correctly with my distance sensor, I dove deep into how the protocol works and gained a much fuller understanding. I now feel ready to work with I2C for future projects.
+3. Software interrupts were something I had heard about but never touched before this course. I thought that they were going to be very technical/confusing, but this course helped me learn how to use them rather easily and see just how valuable they are.
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+
 
 ## Recommendations for Future Students
 
