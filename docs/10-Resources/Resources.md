@@ -14,8 +14,6 @@ A zip file of the MPLAB X IDE code for the subsystem is available [here](EGR314L
 
 Below is a series of screenshots showing the entire main.c file of the subsystem project.
 
-<center>
-
 ![part1](314FinalCode1.png)
 
 ![part2](314FinalCode2.png)
@@ -32,4 +30,3 @@ Below is a series of screenshots showing the entire main.c file of the subsystem
 
 ![part8](314FinalCode8.png)
 
-</center>
