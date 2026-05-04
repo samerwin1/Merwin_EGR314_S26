@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#currently-in-progress" class="md-skip">
+        <a href="#review-of-modules-sucess" class="md-skip">
           Skip to content
         </a>
       
@@ -1082,15 +1082,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#currently-in-progress" class="md-nav__link">
-    <span class="md-ellipsis">
-      Currently In Progress
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#review-of-modules-sucess" class="md-nav__link">
     <span class="md-ellipsis">
       Review of Module's Sucess
@@ -1109,9 +1100,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lessons-learned" class="md-nav__link">
+  <a href="#top-10-lessons-learned" class="md-nav__link">
     <span class="md-ellipsis">
-      Lessons Learned
+      Top 10 Lessons Learned
     </span>
   </a>
   
@@ -1215,15 +1206,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#currently-in-progress" class="md-nav__link">
-    <span class="md-ellipsis">
-      Currently In Progress
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#review-of-modules-sucess" class="md-nav__link">
     <span class="md-ellipsis">
       Review of Module's Sucess
@@ -1242,9 +1224,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lessons-learned" class="md-nav__link">
+  <a href="#top-10-lessons-learned" class="md-nav__link">
     <span class="md-ellipsis">
-      Lessons Learned
+      Top 10 Lessons Learned
     </span>
   </a>
   
@@ -1284,11 +1266,87 @@
 
   <h1>Reflection</h1>
 
-<h2 id="currently-in-progress"><strong>Currently In Progress</strong></h2>
+<p><strong>## Need to finish</strong></p>
 <h2 id="review-of-modules-sucess">Review of Module's Sucess</h2>
+<p>The subsystem was an overall success. The module requirements table is copied below with an additional box showing whether the requirement was met or not in the final version of the module.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Requirement Description</strong></th>
+<th><strong>Measure of<br> Threshold</strong></th>
+<th><strong>Target<br>Measure</strong></th>
+<th style="text-align: center;"><strong>Stretch<br>Requirement<br>(Y-N)</strong></th>
+<th style="text-align: center;"><strong>Requirement<br>Met(Y-N)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Surface mounted, 3.3V switching power regulator</td>
+<td>3.2 Volts</td>
+<td>3.3 Volts</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes(3.3V)</td>
+</tr>
+<tr>
+<td>2. Surface mounted microcontroller</td>
+<td>1 PIC or ESP</td>
+<td>8-bit PIC</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes(8-bit PIC)</td>
+</tr>
+<tr>
+<td>3. Serial sensor</td>
+<td>Capable of quick and accurate distance sensing</td>
+<td>LiDAR ToF sensor</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes(LiDAR)</td>
+</tr>
+<tr>
+<td>4. Able to determine distance from device to object in its path</td>
+<td>10 ft range</td>
+<td>20 ft range</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes(26ft)</td>
+</tr>
+<tr>
+<td>5. Wired communication</td>
+<td>Able to send distance data to another subsystem</td>
+<td>Send distance data to subsystem A2 through serial communication (UART)</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes(UART)</td>
+</tr>
+<tr>
+<td>6. Sufficient refresh rate</td>
+<td>Read/send out distance values at 1Hz</td>
+<td>Read/send out distance values &gt;10Hz</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes<br>(&gt;10Hz possible)</td>
+</tr>
+<tr>
+<td>7. Multi-directional</td>
+<td>Able to read distance in more than 1 direction relative to device orientation</td>
+<td>360-degree distance sensing on horizontal axis</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+</tr>
+</tbody>
+</table>
+<p>As seen from the table the only requirement that was not met is the Multi-directional capability, which was a stretch requirement(goes beyond realistic limits, not necessary for success). This was a good idea that would have been nice to acheive, but it was unrealistic due to the scope, time, and budget limitations of the project. All of the necessary requirements for the subsystem met or exceeded the target measures for success. That being said, due to constraints on the amount of messages the team could send through the 10-person UART chain, we ended up only sending the distance value to the human interface once every two seconds. Therefore this requirement was technically not met when the subsystem was used in the prototype although it had the capability to exceed it.</p>
 <h2 id="microcontrollermodule-startup-tips">Microcontroller/Module Startup Tips</h2>
-<h2 id="lessons-learned">Lessons Learned</h2>
+<ul>
+<li><strong>Check your hardware!</strong> Personally there have been several times throughout this course and others where I've spent way too much time trying to understand why a circuit/code wasn't working, just to realize that I had a bad breadboard/solder connection. If it seems like you're doing everything right and something just refuses to work, save yourself time and stress by double checking all of your hardware connections.</li>
+<li><strong>Read datasheets carefully.</strong> Make sure that you can find a reputable/correct datasheet for any part you're not totally familiar with and ensure you understand the information you need from them. Mistakes can be made easily by not being able to find the info you need or misreading/misunderstanding it.</li>
+<li><strong>Find support online.</strong> Before settling on a major idea for your subsystem with a specific microcontroller/components, make sure you can find an example of somebody successfully implementing that combination. Obviously the point of the course is to create something original and figure it out yourself, but it's nice to have a reference or backup plan just in case you can't figure out how to do it.</li>
+</ul>
+<h2 id="top-10-lessons-learned">Top 10 Lessons Learned</h2>
 <h2 id="recommendations-for-future-students">Recommendations for Future Students</h2>
+<ol>
+<li>Look at some explanations/examples of software interrupts before the assignments/lectures in class. It helps to have an understanding of how they work before jumping right into it with the lab, and they are a vital tool in programming.</li>
+<li>Get at least a light understanding of advanced serial communication modes (SPI and I2C) before getting too far into this course. It is more complicated than UART and will take some time to get it working smoothly/correctly.</li>
+<li>Try to select and order your microchip/components well before the assignment due date with through-hole versions so you can begin building your system on a breadboard and debugging. This way you can work out all the kinks before your PCB arrives and you don't have to stress about your subsystem not working in the final weeks.</li>
+<li>Similar to #3, try to get a headstart on designing your PCB, finish it well before the due date, and review it with the professor/student-aids/classmates. It is imperative that you find errors before the designs are sent out to be printed so that you don't fry components and/or end up having to physically alter your PCB with very little time left in the semester.</li>
+<li>Coordinate with your teammates to get your individual subsytems finished and connect them together for testing. You will want multiple sessions for testing to ensure compatibility and consistent results before the in-class checkoff/Innovation Showcase.</li>
+</ol>
 
 
 
